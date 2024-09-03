@@ -16,10 +16,12 @@ export interface movieRowProbs {
 
 export interface movieIdPageParams {
   params: {
-    id: string;
+    searchInput : string;
   };
 }
 
 export interface footerProps {
-  // define props list here
+  year: string;
+  fullName: string;
+  studentId: string;
 }
