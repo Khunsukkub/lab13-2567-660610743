@@ -5,7 +5,7 @@ import { movieDB } from "@lib/movieDB";
 import { movieIdPageParams } from "@lib/types";
 
 export default function MovieIdPage({ params }: movieIdPageParams) {
-  const id = Number(params.id);
+  const id = Number(params.searchInput);
   const selMovie = movieDB.find((movie) => movie.id === id);
 
   if (!selMovie) {
